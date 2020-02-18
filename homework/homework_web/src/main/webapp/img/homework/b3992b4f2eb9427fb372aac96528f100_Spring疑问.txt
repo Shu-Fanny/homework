@@ -1,0 +1,3 @@
+1、在 Spring 第二天中使用纯注解案例开发时候 @PropertySource("classpath:jdbcConfig.properties")
+   此标签放在主配置类中与放在子配置类中有何不同？
+   

@@ -1,0 +1,8 @@
+﻿安卓抢红包必学
+1、六大布局
+	重点：线性布局、相对布局
+	了解：表格布局、帧布局、绝对布局、网格布局（4.0后新增）
+	
+2、必用组件
+	textview、editview、button
+-DarchetypeCatalog=internal
