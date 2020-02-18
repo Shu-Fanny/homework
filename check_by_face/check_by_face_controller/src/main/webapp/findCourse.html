@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/best.css"/>
+		
+		<script type="text/javascript" src="js/vue-2.4.0.js" ></script>
+		<script type="text/javascript" src="js/vue-resource-1.3.4.js" ></script>
+
+	</head>
+	<body>
+		<div id="app">
+		<div class="t">
+			<div class="l">
+				<span>首页</span>
+				<input type="text"/>
+				<a href="#"> </a>
+			</div>
+			
+			
+			
+			
+			
+			<div class="r">
+				<div class="r_ubs">
+					<a href="#" >
+						<img class="tx" src="img/download1.png"/>
+					</a>
+					<a href="#">
+						<span>杨俊杰</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="shen w">
+			<div class="shenl">
+				<div class="geren">
+					<a href="#"><img src="img/download1.png"/>
+					<div>
+						<span id="xm">
+							杨俊杰
+						</span>
+						<br />
+						<span class="zhgl">
+							账号管理
+						</span>	
+					</div>
+					</a>
+				</div>
+				<div class="memu">
+					<ul>
+						<li><a href="#">课程</a></li>
+						<li><a href="#">收件箱<div class="dian"></div><br /></a>
+						</li>
+						<li><a href="#">专题创造</a></li>
+						<li><a href="#">小组</a></li>
+						<li><a href="#">笔记</a></li>
+						<li><a href="#">电脑同步云盘</a></li>
+						<li><a href="#">通讯录</a></li>
+						<li>
+							<a href="#"><div class="glyy"><span>+</span> 管理应用</div></a>
+						</li>
+						
+					</ul>
+				</div>、
+				
+				
+				
+				<div class="richscan">
+					<img src="img/ewm.png" width="150px" height="150px"/>
+					<p>扫一扫下载手机应用</p>
+					
+				</div>
+			</div>
+			<div class="shenr">
+				<div class="tjkc">
+					<a href="#" id="wjdk">我教的课</a>
+					<a href="#" id="tjkc">添加课程</a>
+				</div>
+			
+				<div class="ke" v-for="(item,i) in list" @click="addcourse()">
+					<div class="kecheng" >
+						<img class="tp" :src="'/check_by_face_controller/'+list[i].course_picture"></img>
+						<span>{{list[i].course_name}}</span>
+						<p>{{list[i].course_des}}</p>
+						<p>{{list[i].id}}</p>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+
+		</div>
+		
+		<script>
+
+			var vm = new Vue({
+				el:'#app',
+				data:{
+					mag :'1',
+					list:'1'
+
+				},
+				methods:{
+					addcourse(){
+						this.$http.post('http://192.168.0.2:8899/check_by_face_controller/test/findCourseByTid.do',{},{emulateJSON:true}).then(result=>{
+						console.log(result.body);
+						this.list = result.body;})
+					}
+				}
+
+			});
+		</script>
+	</body>
+</html>

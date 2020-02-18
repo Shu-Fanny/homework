@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="check_by_face_controller" />
+        <module name="check_by_face_dao" />
+        <module name="check_by_face_domain" />
+        <module name="check_by_face_service" />
+        <module name="check_by_face_utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="check_by_face_web" target="1.8" />
+      <module name="compypcheck_by_faceweb" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

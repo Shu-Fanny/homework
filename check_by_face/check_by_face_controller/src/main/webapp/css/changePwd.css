@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 100%;
+	height: 100%;
+
+}
+.header{
+	background-color: #006600;
+	width: 100%;
+	height: 50px;
+	min-width:1400px;
+}
+.header .left_header{
+	height: 50px;
+	margin-left: 30px;
+}
+.header .right_header{
+	float: right;
+	height: 49px;
+	margin-right: 30px;
+}
+.middle{
+	width: 1300px;
+	height: 900px;
+	margin: auto;
+}
+.middle .left_box{
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	width: 250px;
+	height: 800px;
+	background: url(../img/menu.png);
+	border: none;
+}
+.left_box .head_portrait{
+	border: 1px black solid;
+	width: 120px;
+	height: 120px;
+	margin: 50px auto 20px auto;
+	background: white;
+}
+.head_portrait img{
+	width: 120px;
+	height: 120px;
+}
+.left_box .menu{
+	width: 200px;
+	height: 500px;
+	margin: auto;
+    /*background-color: white;*/
+    text-align: center;
+}
+.left_box .menu p{
+	margin-bottom: 50px;
+	color: #488f53;
+}
+.left_box .menu a{
+	margin-top: 10px;
+	text-decoration: none;
+	display: block;
+	font-family: "FangSong";
+	font-size: 20px;
+	color: #488f53;
+}
+.middle .right_box{
+	float: right;
+	margin-top: 50px;
+	margin-right: 50px;
+	width: 900px;
+	height: 800px;
+}
+.middle .right_box h2{
+	margin-left: 25px;
+	color: #488f53;
+	letter-spacing: 6px;
+}
+.right_box a img{
+	position: absolute; 
+	margin-top: -25px; 
+	margin-left:780px; 
+	width: 80px; 
+	height: 20px;
+}
+.right_box .ulDiv{
+	margin-top: 50px;
+	margin-left: 20px;
+	line-height: 30px;
+}
+.ulDiv p{
+	font-size: 18px;
+}
+.ulDiv input{
+	width: 200px;
+	height: 25px;
+}
+.ulDiv button{
+	border: none;
+	width: 80px;
+	height: 30px;
+	font-size: 20px;
+	background-color: #488f53;
+	border-radius: 5px;
+	margin-left: 120px;
+	margin-top: 30px;
+	
+}
+.nav{
+	min-width: 1400px;
+	width: 100%; 
+	height: 50px;
+	margin-bottom:0;
+	background-color: #006600;
+}
